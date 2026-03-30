@@ -1,0 +1,28 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Bahnschrift';
+    font-weight: normal;
+    font-style: normal;
+}
+ul, ol{
+    padding-left: 16px;
+}
+
+p{
+    margin-bottom: 0;
+}
+a{
+    color: #000;
+    text-decoration: none;
+}
+figure{
+    margin-bottom: 0;
+}
+h6{
+    padding:0;
+}
+
+span{
+    background-color: aquamarine;
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .top-bar{
+    background: lightblue;
+    color: var(--white);
+    padding: 8px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* align-items: flex-end; */
+    font-size: 14px;
+    }
+    .social i{
+        font-size: 18px;
+        margin-left: 10px;
+        color: var(--white);
+        cursor: pointer;
+    }
+    
+    .nav-wrapper{
+        padding: 20px 10%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 999;
+        background-color: blueviolet;
+    }
+    .navbar ul{
+        display: flex;
+        list-style: none;
+    }
+    .navbar ul li{
+        margin-left: 20px;
+    }
+    .navbar ul li a{
+        color: var(--white);
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .container {
+    display: flex;
+    border: 1px solid #333;
+    }
+
+    .left-side {
+    flex: 1;
+    border-right: 1px solid #333;
+    }
+    .right {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    }
+
+    .right-top {
+    padding: 10px 14px;
+    border-bottom: 1px solid #333;
+    }
+
+    .right-bottom {
+    display: flex;
+    flex: 1;
+    }
+
+    .right-bottom-left {
+    flex: 1;
+    padding: 10px 14px;
+    border-right: 1px solid #333;
+    }
+
+    .right-bottom-right {
+    flex: 1;
+    padding: 10px 14px;
+    }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <div>
+            Phone: +123 456 7890 | Email: info@techguru.com
+        </div>
+        <div class="social">
+            <i class='bx bxl-facebook'></i>
+            <i class='bx bxl-twitter'></i>
+            <i class='bx bxl-instagram-alt'></i>
+        </div>
+    </div>
+    <div class="nav-wrapper">
+        <div class="logo">
+            <span><i class='bx bxl-unity'></i>Tech</span> Guru
+        </div>
+        <div class="navbar" id="navMenu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="hamburger" onclick="ToggleMenu()" >
+            <i class='bx bx-menu'></i>
+        </div>
+    </div>
+    <div class="container">
+        <div class="left-side">Left-side</div>
+            <div class="right">
+                <div class="right-top">right-top</div>
+                <div class="right-bottom">
+                <div class="right-bottom-left">Right bottom-left</div>
+                <div class="right-bottom-right">Right bottom-right</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

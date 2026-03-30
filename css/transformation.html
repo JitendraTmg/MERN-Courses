@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            margin: 100px;
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            /* transform: translate(100px, 100px) rotate(45deg) scale(1) skew(20deg, 10deg); */
+            transform: scale(0.5);
+            animation: myAnimation 2s ease 3s infinite alternate backwards;
+        }
+        @keyframes myAnimation{
+            from{
+                background-color: lightblue;
+                transform: translateX(0) rotate(0) scale(1) skew(0, 0);
+            }
+            to{
+                background-color: lightcoral;
+                transform: translateX(200px) rotate(45deg) scale(1) skew(20deg, 10deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">Hello, World!</div>
+    <!-- grid , combinator, pseudo class, color format, animation, transition, transform, flexbox, position, display, box model, media query, variable, function, selector, specificity, inheritance, cascade, unit
+    (rem em px % vh vw vmin vmax ch ex) -->
+</body>
+</html>
