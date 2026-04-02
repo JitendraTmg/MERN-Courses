@@ -77,7 +77,7 @@ result(); // Output: unnamed function!
 })();
 
 
-scope in JavaScript refers to the accessibility of variables and functions in different parts of the code. There are three types of scope: global scope, function scope, and block scope.
+// scope in JavaScript refers to the accessibility of variables and functions in different parts of the code. There are three types of scope: global scope, function scope, and block scope.
 
 // global scope
 var globalVar = "I am a global variable";
