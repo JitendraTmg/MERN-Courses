@@ -56,5 +56,5 @@ for (let i in details){
     console.log("value of",i, "is ;",details[i]);
 }
 
-//Array
+
 
